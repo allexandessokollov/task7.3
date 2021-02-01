@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 188
+  Top = 302
+  Width = 705
+  Height = 255
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Trebuchet MS'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 24
+  object Label1: TLabel
+    Left = 360
+    Top = 8
+    Width = 106
+    Height = 24
+    Caption = 'Matrix Sise: '
+  end
+  object Label2: TLabel
+    Left = 360
+    Top = 40
+    Width = 48
+    Height = 24
+    Caption = 'N x M'
+  end
+  object Label3: TLabel
+    Left = 360
+    Top = 184
+    Width = 93
+    Height = 24
+    Caption = 'Answer is: '
+  end
+  object answer: TLabel
+    Left = 456
+    Top = 184
+    Width = 72
+    Height = 24
+    Caption = '            '
+  end
+  object nSize: TEdit
+    Left = 472
+    Top = 8
+    Width = 41
+    Height = 32
+    TabOrder = 0
+    Text = '4'
+  end
+  object mSize: TEdit
+    Left = 472
+    Top = 48
+    Width = 41
+    Height = 32
+    TabOrder = 1
+    Text = '4'
+  end
+  object matrix: TStringGrid
+    Left = 8
+    Top = 0
+    Width = 337
+    Height = 209
+    DefaultColWidth = 40
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = []
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object changeSize: TButton
+    Left = 520
+    Top = 48
+    Width = 153
+    Height = 33
+    Caption = 'Change Size'
+    TabOrder = 3
+    OnClick = changeSizeClick
+  end
+  object fillMatrix: TButton
+    Left = 520
+    Top = 8
+    Width = 153
+    Height = 33
+    Caption = 'Fill matrix'
+    TabOrder = 4
+    OnClick = fillMatrixClick
+  end
+  object getAnswer: TButton
+    Left = 360
+    Top = 136
+    Width = 145
+    Height = 33
+    Caption = 'get answer'
+    TabOrder = 5
+    OnClick = getAnswerClick
+  end
+  object Button1: TButton
+    Left = 520
+    Top = 88
+    Width = 153
+    Height = 33
+    Caption = 'fill 1'
+    TabOrder = 6
+    OnClick = fillZeroClick
+  end
+end
